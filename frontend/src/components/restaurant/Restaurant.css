@@ -1,0 +1,48 @@
+.pri {
+    background: linear-gradient(#d3ebff, #fff0d3);
+    height: 100%;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.food-container{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+}
+
+.drink-container{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+}
+
+.food-item{
+    border: 2px solid rgb(37, 37, 37);
+    margin: 20px;
+}
+
+.drink-item{
+    border: 2px solid rgb(37, 37, 37);
+    margin: 20px;
+}
+
+.veg{
+    background-color: rgb(206, 255, 206);
+}
+
+.non-veg{
+    background-color: rgb(255, 214, 214);
+}
+
+.cocktail{
+    background-color: rgb(246, 200, 255);
+}
+
+.mocktail{
+    background-color: rgb(255,246,195);
+}

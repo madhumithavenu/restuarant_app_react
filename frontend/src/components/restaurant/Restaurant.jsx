@@ -33,17 +33,20 @@ function Restaurant(props) {
                 <div className='food-container'>
                     {
                         menuData.flag ? menuData.foodData.map(item => {
-                            return <Card className='food-item' style={{ width: '18rem' }} key={item.foodName}>
+                            return <Card className='food-item' style={{ "width": '18rem' }} key={item.foodName}>
                                 <Card.Img variant="top" src={'images/food/' + item.foodName + '.jpg'} />
                                 <Card.Body className={(item.category === 'veg') ? 'veg' : 'non-veg'}>
                                     <Card.Title>{item.foodName} : {item.price} </Card.Title>
                                     <Card.Text>
                                         {item.foodName} is an amazing Dish. You should try it.
                                     </Card.Text>
+                                    <Card.Text>
                                     Category:
                                     <img src={(item.category === 'veg') ?  'images/veg.png' :  'images/non-veg.png'}
                                         height="30px" width="30px" />
+                                    </Card.Text>
                                     <Button variant="primary">Buy Now</Button>
+ 
                                 </Card.Body>
                             </Card>
                         }) : <h1>Loading</h1>
@@ -56,14 +59,16 @@ function Restaurant(props) {
                 <div className='drink-container'>
                     {
                         menuData.flag ? menuData.drinkData.map(item => {
-                            return <Card className='drink-item' style={{ width: '18rem' }} key={item.drinkName}>
+                            return <Card className='drink-item' style={{ "width": '18rem' }} key={item.drinkName}>
                                 <Card.Img variant="top" src={'images/drink/' + item.drinkName + '.jpg'} />
-                                <Card.Body className={(item.category === 'cocktail') ? 'cocktail' : 'non-mocktail'}>
+                                <Card.Body className={(item.category === 'cocktail') ? 'cocktail' : 'mocktail'}>
                                     <Card.Title>{item.drinkName} : {item.price} </Card.Title>
                                     <Card.Text>
                                         {item.drinkName} is an amazing Drink. You should try it.
                                     </Card.Text>
-                                    Category: {item.category}
+                                    <Card.Text>
+                                        Category: {item.category}
+                                    </Card.Text>
 
                                     <Button variant="primary">Buy Now</Button>
                                 </Card.Body>

@@ -2,13 +2,12 @@
     background: black;
     color: white;
     display: flex;
-    /* flex-wrap: wrap; */
-    /* overflow: hidden; */
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .btn{
     color: white;
-    margin-left: 30px;
 }
 .navbar{
     font-size: large;
