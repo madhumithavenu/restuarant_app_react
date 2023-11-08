@@ -3,14 +3,14 @@ body {
 }
 
 #root {
-    height: 120vh;
+    height: 145vh;
 }
 
 .pri {
     background: linear-gradient(#d3ebff, #fff0d3);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 250vh;
+    background-size: 220vh;
     display: flex;
     align-items: center;
     flex-direction: column;
